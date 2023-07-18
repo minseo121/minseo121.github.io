@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.isamanroo-font{
+    font-family: 'GongGothicMedium',sans-serif;
+}
+.anton-font{
+    font-family: 'Anton',sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+}
+.display-container{
+    max-width: 415px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    overflow:hidden;
+}
+.main {
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(33, 33, 33, 0);
+}
+.main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#demotext {
+    text-shadow: -2px -2px 2px rgba(255,255,255,.1), 2px 2px 2px rgba(0,0,0,.5);
+    }
+.glitch {
+    position: relative;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 6px;
+    z-index: 1;
+ }
+ 
+ .glitch:before {
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 0);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-before 3s infinite linear alternate-reverse;
+ }
+ 
+ .glitch:after {
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 0);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-after 2s infinite linear alternate-reverse;
+ }
+ 
+ @keyframes noise-before {
+    0% {
+       clip: rect(61px, 9999px, 52px, 0);
+    }
+ 
+    5% {
+       clip: rect(33px, 9999px, 144px, 0);
+    }
+ 
+    10% {
+       clip: rect(121px, 9999px, 115px, 0);
+    }
+ 
+    15% {
+       clip: rect(144px, 9999px, 162px, 0);
+    }
+ 
+    20% {
+       clip: rect(62px, 9999px, 180px, 0);
+    }
+ 
+    25% {
+       clip: rect(34px, 9999px, 42px, 0);
+    }
+ 
+    30% {
+       clip: rect(147px, 9999px, 179px, 0);
+    }
+ 
+    35% {
+       clip: rect(99px, 9999px, 63px, 0);
+    }
+ 
+    40% {
+       clip: rect(188px, 9999px, 122px, 0);
+    }
+ 
+    45% {
+       clip: rect(154px, 9999px, 14px, 0);
+    }
+ 
+    50% {
+       clip: rect(63px, 9999px, 37px, 0);
+    }
+ 
+    55% {
+       clip: rect(161px, 9999px, 147px, 0);
+    }
+ 
+    60% {
+       clip: rect(109px, 9999px, 175px, 0);
+    }
+ 
+    65% {
+       clip: rect(157px, 9999px, 88px, 0);
+    }
+ 
+    70% {
+       clip: rect(173px, 9999px, 131px, 0);
+    }
+ 
+    75% {
+       clip: rect(62px, 9999px, 70px, 0);
+    }
+ 
+    80% {
+       clip: rect(24px, 9999px, 153px, 0);
+    }
+ 
+    85% {
+       clip: rect(138px, 9999px, 40px, 0);
+    }
+ 
+    90% {
+       clip: rect(79px, 9999px, 136px, 0);
+    }
+ 
+    95% {
+       clip: rect(25px, 9999px, 34px, 0);
+    }
+ 
+    100% {
+       clip: rect(173px, 9999px, 166px, 0);
+    }
+ }
+ 
+ @keyframes noise-after {
+    0% {
+       clip: rect(26px, 9999px, 33px, 0);
+    }
+ 
+    5% {
+       clip: rect(140px, 9999px, 198px, 0);
+    }
+ 
+    10% {
+       clip: rect(184px, 9999px, 89px, 0);
+    }
+ 
+    15% {
+       clip: rect(121px, 9999px, 6px, 0);
+    }
+ 
+    20% {
+       clip: rect(181px, 9999px, 99px, 0);
+    }
+ 
+    25% {
+       clip: rect(154px, 9999px, 133px, 0);
+    }
+ 
+    30% {
+       clip: rect(134px, 9999px, 169px, 0);
+    }
+ 
+    35% {
+       clip: rect(26px, 9999px, 187px, 0);
+    }
+ 
+    40% {
+       clip: rect(147px, 9999px, 137px, 0);
+    }
+ 
+    45% {
+       clip: rect(31px, 9999px, 52px, 0);
+    }
+ 
+    50% {
+       clip: rect(191px, 9999px, 109px, 0);
+    }
+ 
+    55% {
+       clip: rect(74px, 9999px, 54px, 0);
+    }
+ 
+    60% {
+       clip: rect(145px, 9999px, 75px, 0);
+    }
+ 
+    65% {
+       clip: rect(153px, 9999px, 198px, 0);
+    }
+ 
+    70% {
+       clip: rect(99px, 9999px, 136px, 0);
+    }
+ 
+    75% {
+       clip: rect(118px, 9999px, 192px, 0);
+    }
+ 
+    80% {
+       clip: rect(1px, 9999px, 83px, 0);
+    }
+ 
+    85% {
+       clip: rect(145px, 9999px, 98px, 0);
+    }
+ 
+    90% {
+       clip: rect(121px, 9999px, 154px, 0);
+    }
+ 
+    95% {
+       clip: rect(156px, 9999px, 44px, 0);
+    }
+ 
+    100% {
+       clip: rect(67px, 9999px, 122px, 0);
+    }
+ }
+
+ .sub-title{
+    text-shadow: -2px -2px 2px rgba(255,255,255,.1), 2px 2px 2px rgba(0,0,0,.5);
+ }
+
+ .btn-main{
+    position:relative;
+    z-index:1;
+    text-decoration-line: none;
+    filter:drop-shadow(0px 0px 8px #ffffff)
+ }
+ .btn-main-waterisland-in{
+    color: #6bc6dd;
+    background: #000000;
+    width : 98%;
+    height: 100%;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+ }
+
+ .btn-main-waterisland-out{
+    position:absolute;
+    background: #6bc6dd;
+    width : 100%;
+    height: 110%;
+    z-index : -1;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+ }
+
+ .btn-main-waterisland-in:hover{
+    color: #ffffff;
+    background: #55d6f6;
+    width : 98%;
+    height: 100%;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+    transition: 0.3s;
+ }
+
+ .btn-main-Romanticisland-in{
+    color: #c62b6b;
+    background: #000000;
+    width : 98%;
+    height: 100%;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+ }
+
+ .btn-main-Romanticisland-out{
+    position:absolute;
+    background: #c62b6b;
+    width : 100%;
+    height: 110%;
+    z-index : -1;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+ }
+
+ .btn-main-Romanticisland-in:hover{
+    color: #ffffff;
+    background: #e43a81;
+    width : 98%;
+    height: 100%;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+    transition: 0.3s;
+ }
+
+ .btn-main-Gardenisland-in{
+    color: #287e3a;
+    background: #000000;
+    width : 98%;
+    height: 100%;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+ }
+
+ .btn-main-Gardenisland-out{
+    position:absolute;
+    background: #287e3a;
+    width : 100%;
+    height: 110%;
+    z-index : -1;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+ }
+
+ .btn-main-Gardenisland-in:hover{
+    color: #ffffff;
+    background: #29a844;
+    width : 98%;
+    height: 100%;
+    clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+    transition: 0.3s;
+ }
+
+ .wayto-water-island{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 35px;
+ }
+
+ .wayto-water-island p{
+    font-size:12px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom:5px;
+ }
+
+ .wayto-water-island img{
+    width: auto;
+    height: 40px;
+    filter:drop-shadow(2px 2px 5px #000000);
+ }
+
+ .waterisland-section{
+   background-color: #000000;
+   position: relative;
+   min-height : 100vh;
+   padding-top: 100px;
+   z-index: 0;
+ }
+ .waterisland-title{
+   position:relative;
+ }
+ .island-title{
+   font-size : 30px;
+   color: black;
+   -webkit-text-stroke: 1px #55d6f6;
+   margin: -30px;
+ }
+ .poolus-title{
+   font-size: 100px;
+   color: #55d6f6;
+ }
+ .waterisland-section .section-explanation{
+   font-weight: 500;
+   color:#55d6f6;
+   z-index: 1;
+ }
+ .main-waterisland-btn{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   margin-top: 15px;
+ }
+ .main-waterisland-btn button{
+   background-color:#55d6f6;
+   border:none;
+   color:black;
+   position:relative;
+   font-family: 'GongGothicMedium';
+   z-index:1;
+   filter:drop-shadow(2px 2px 2px #000000);
+   padding:10px;
+   width:200px;
+   border-radius: 10px;
+   font-size: 20px;
+ }
+ .waterisland-img{
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+ }
+ .Wave-line1, .Wave-line2{
+   width:100px;
+   position:absolute;
+   height: auto;
+   z-index: -1;
+ }
+ .Wave-line1{
+   right:-65px;
+   top:10px;
+ }
+ .Wave-line2{
+   left:-65px;
+   bottom:50px;
+ }
+ .wayto-romantic-island{
+   position: absolute;
+   z-index: 1;
+   bottom: 0;
+   margin-bottom: 20px;
+   left: 37%;
+}
+
+.wayto-romantic-island p{
+   font-size:12px;
+   color: #000;
+   font-weight: 900;
+   margin-bottom:5px;
+}
+
+.wayto-romantic-island img{
+   width: auto;
+   height: 40px;
+   filter:drop-shadow(2px 2px 5px #000000);
+}
+.romanticisland-section{
+   background-color: #9fd5f4;
+   position: relative;
+   min-height : 100vh;
+   padding-top: 100px;
+   z-index: 0;
+   overflow: hidden;
+ }
+ .romanticisland-title{
+   position:relative;
+   top : 20px;
+ }
+ .island-title2{
+   font-size : 30px;
+   color: transparent;
+   -webkit-text-stroke: 1px #c62b6b;
+   font-weight: 900;
+   margin: -30px;
+ }
+ .poolus-title2{
+   font-size: 100px;
+   color: #c62b6b;
+ }
+ .cloud-1{
+   left:0;
+   top:30px;
+   height:auto;
+   position:absolute;
+   width:155px;
+   z-index:-1;
+ }
+.cloud-2{
+   right:-35px;
+   top: 150px;
+   height:auto;
+   position:absolute;
+   width:155px;
+   z-index:-1;
+}
+.cloud-3{
+   left: -25px;
+   top: 350px;
+   height:auto;
+   position:absolute;
+   width:155px;
+   z-index:-1;
+}
+.hashtag span{
+   background-color: #c62b6b;
+   color:#9fd5f4;
+   font-size: 12px;
+}
+.romanticisland-img{
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+ }
+ .wayto-garden-island{
+   position: absolute;
+   z-index: 1;
+   bottom: 0;
+   margin-bottom: 20px;
+   left: 37%;
+}
+
+.wayto-garden-island p{
+   font-size:12px;
+   color: #c62b6b;
+   font-weight: 900;
+   margin-bottom:5px;
+}
+
+.wayto-garden-island img{
+   width: auto;
+   height: 40px;
+}
+.romanticisland-section .section-explanation{
+   color : #c62b6b;
+   font-size: 15px;
+   margin-top:30px;
+   font-weight: 900;
+}
+.heart-1{
+   height:auto;
+   left : 50px;
+   position:absolute;
+   width:100px;
+}
+.heart-2{
+   height: auto;
+   position:absolute;
+   width:50px;
+   right:50px;
+   bottom: 127px;
+}
+.heart-3{
+   height: auto;
+   position: absolute;
+   width : 50px;
+   right:100px;
+}
+
+.gardenisland-section{
+   background-color: #fef5e8;
+   position: relative;
+   min-height : 100vh;
+   padding-top: 100px;
+   z-index: 0;
+ }
+ .gardenisland-title{
+   position:relative;
+ }
+ .island-title3{
+   font-size : 30px;
+   color: transparent;
+   -webkit-text-stroke: 1px #287e3a;
+   margin: -30px;
+   font-weight: 800;
+ }
+ .poolus-title3{
+   font-size: 100px;
+   color: #287e3a;
+   margin-bottom: 0;
+ }
+ .gardenisland-section .section-explanation{
+   font-weight: 500;
+   color:#287e3a;
+   z-index: 1;
+   font-weight: 700;
+   text-shadow: 0 0 10px #fff;
+ }
+ .main-gardenisland-btn{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   margin-top: 15px;
+ }
+ .main-gardenisland-btn button{
+   background-color:#287e3a;
+   border:none;
+   color:#fef5e8;
+   position:relative;
+   font-family: 'GongGothicMedium';
+   z-index:1;
+   padding:10px;
+   width:200px;
+   border-radius: 10px;
+   font-size: 20px;
+ }
+ .gardenisland-img{
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+ }
