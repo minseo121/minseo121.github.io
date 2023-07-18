@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+}
+@font-face {
+    font-family: 'LOTTERIADDAG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.Lotteria-font{
+    font-family:"LOTTERIADDAG",sans-serif;
+}
+.display-container{
+    max-width: 415px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    background-image: url("./img/waterback.png");
+    overflow:hidden;
+    position:relative;
+}
+a{
+    text-decoration-line: none;
+    color:#fff;
+}
+.day1,.day2{
+    border-bottom: 5px solid black;
+    font-size:20px;
+}
+nav{
+    width:415px;
+    margin:0 auto;
+    background-image:url('./img/waterback.png');
+    background-size: cover;
+}
+.DayUnAct{
+    border-bottom :5px solid rgb(0,0,0,0.5);
+    color:rgb(255,255,255,0.8);
+}
+.artist_section{
+    padding-top:140px;
+}
+.artist1,.artist2{
+    position:relative;
+    margin-bottom:100px;
+}
+.artist1 img{
+    width : 280px;
+    height:auto;
+    margin-right:50px;
+}
+.bin1{
+    font-size: 70px;
+    right:38px;
+    top:200px;
+    position: absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.bin_time{
+    font-size: 40px;
+    right:40px;
+    top:280px;
+    position:absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.artist2 img{
+    width : 280px;
+    height:auto;
+    margin-left:50px;
+}
+.jina{
+    font-size: 70px;
+    left:38px;
+    top:200px;
+    position: absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.jina_time{
+    font-size: 40px;
+    left:40px;
+    top:280px;
+    position:absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.locy{
+    font-size: 70px;
+    right:38px;
+    top:200px;
+    position: absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.locy_time{
+    font-size: 40px;
+    right:40px;
+    top:280px;
+    position:absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.bolsa{
+    font-size: 60px;
+    left:30px;
+    top:200px;
+    position: absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
+.bolsa_time{
+    font-size: 40px;
+    left:40px;
+    top:280px;
+    position:absolute;
+    text-shadow: 2px 2px #6BC6DD;
+}
