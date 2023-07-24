@@ -49,14 +49,14 @@ nav{
     height:auto;
     margin-right:50px;
 }
-.bin1{
+.bin1,.ezuz{
     font-size: 70px;
     right:38px;
     top:200px;
     position: absolute;
     text-shadow: 2px 2px #6BC6DD;
 }
-.bin_time{
+.bin_time,.ezuz_time{
     font-size: 40px;
     right:40px;
     top:280px;
@@ -68,28 +68,28 @@ nav{
     height:auto;
     margin-left:50px;
 }
-.jina{
+.jina,.bewhy{
     font-size: 70px;
     left:38px;
     top:200px;
     position: absolute;
     text-shadow: 2px 2px #6BC6DD;
 }
-.jina_time{
+.jina_time,.bewhy_time{
     font-size: 40px;
     left:40px;
     top:280px;
     position:absolute;
     text-shadow: 2px 2px #6BC6DD;
 }
-.locy{
+.locy, .tencm{
     font-size: 70px;
     right:38px;
     top:200px;
     position: absolute;
     text-shadow: 2px 2px #6BC6DD;
 }
-.locy_time{
+.locy_time, .tencm_time{
     font-size: 40px;
     right:40px;
     top:280px;
