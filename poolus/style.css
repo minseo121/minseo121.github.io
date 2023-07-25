@@ -618,6 +618,7 @@ body {
    background-image: radial-gradient( black, black);
    z-index: 1000;
    margin-right: -20rem;
+   margin-top:1%;
    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
  }
  
@@ -647,8 +648,7 @@ body {
    font-size: 25px;
  }
  
- .link:link,
- .link:visited {
+ .link {
    display: inline-block;
    font-size: 1.5rem;
    font-weight: 300;
@@ -735,4 +735,8 @@ body {
  }
  .nav_bar{
    padding: 1rem;
+ }
+ .finish{
+   margin-top: 50%;
+   position:absolute;
  }
